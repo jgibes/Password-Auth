@@ -6,7 +6,7 @@ public class Register {
 
   //Turns a password into an MD5 hash wrritten in hex 
   static String md5(String text) throws Exception {
-    MessageDigest md = MessageDigest.getInstance("MD5";
+    MessageDigest md = MessageDigest.getInstance("MD5");
     byte[] bytes = md.digest(text.getBytes("UTF-8"));
     StringBuilder sb = new StringBuilder();
     for (byte b : bytes) {
